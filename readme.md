@@ -11,3 +11,4 @@ git is free software
 - git commit  -m {提交说明} 把文件提交到仓库
 - git status 查看提交状态
 - git diff 对比改动
+- git log 查看提交日志
