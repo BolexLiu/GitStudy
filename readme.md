@@ -32,7 +32,14 @@ git is free software
 ## 比较
 - git diff    #是工作区(work dict)和暂存区(stage)的比较
 - git diff --cached    #是暂存区(stage)和分支(master)的比较
-- git diff HEAD -- readme.txt  #是工作区(work dict)和分支(master)的比较
+- git diff HEAD -- ｛文件名｝  #是工作区(work dict)和分支(master)的比较
 
 ##push
-- git push -u origin master 将本地库push到远程origin上去
+- git push -u origin master 将本地库push到远程origin上去 -u表示Git不但会把本地的master分支内容推送的远程新的master分支，还会把本地的master分支和远程的master分支关联起来，在以后的推送或者拉取时就可以简化命令。 
+- git push origin master 简化以后:将本地仓库中的代码push至origin
+
+##分支
+- git branch ｛分支名称｝ 创建分支
+- git checkout ｛分支名称｝ 切换到该分支
+- git checkout -b ｛分支名称｝ 创建一个分支并-b切换到该分支
+- git branch 查看当前分支
