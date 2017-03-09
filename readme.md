@@ -45,4 +45,5 @@ git is free software
 - git branch 查看当前分支
 - git merge ｛分支名称｝ 将当前的分支与｛｝中的分支合并
 - git branch -d ｛分支名称｝ 删除一个分支
-- git log --graph --pretty=oneline --abbrev-commit 擦
+- 查看分支情况 git log --graph --pretty=oneline --abbrev-commit 
+
