@@ -23,13 +23,16 @@ git is free software
 
 ##工作区回滚至未修改前（丢去本次工作区的修改）
 
-git checkout -- file  工作区的修改全部撤销
+- git checkout -- file  工作区的修改全部撤销
 
 ##暂存区回滚到工作区
-git reset HEAD file 
+- git reset HEAD file 
 
 
 ## 比较
-git diff    #是工作区(work dict)和暂存区(stage)的比较
-git diff --cached    #是暂存区(stage)和分支(master)的比较
-git diff HEAD -- readme.txt  #是工作区(work dict)和分支(master)的比较
+- git diff    #是工作区(work dict)和暂存区(stage)的比较
+- git diff --cached    #是暂存区(stage)和分支(master)的比较
+- git diff HEAD -- readme.txt  #是工作区(work dict)和分支(master)的比较
+
+##push
+- git push -u origin master 将本地库push到远程origin上去
