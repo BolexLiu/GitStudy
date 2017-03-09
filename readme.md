@@ -43,3 +43,5 @@ git is free software
 - git checkout ｛分支名称｝ 切换到该分支
 - git checkout -b ｛分支名称｝ 创建一个分支并-b切换到该分支
 - git branch 查看当前分支
+- git merge ｛分支名称｝ 将当前的分支与｛｝中的分支合并
+- git branch -d ｛分支名称｝ 删除一个分支
