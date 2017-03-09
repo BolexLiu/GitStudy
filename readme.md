@@ -6,13 +6,21 @@ git is free software
 
 ## 基本命令：
 - git init 初始化目录
--  git add ｛文件名称｝ 放入git仓库的暂存区域
+
+- git add ｛文件名称｝ 放入git仓库的暂存区域
+
 - git commit  -m {提交说明} 把文件提交到仓库
+
 - git status 查看提交状态
+
 - git diff 对比改动
+
 - git log 查看提交日志 （--pretty=｛oneline｝ 只看概要）
+
 - git 输入 git log --all 命令后出现<END>标记？按Q退出
- rm ｛文件命｝ 删除文件
+   rm ｛文件命｝ 删除文件
+
+
 
 ---
 
@@ -44,6 +52,20 @@ git is free software
 - git checkout -b ｛分支名称｝ 创建一个分支并-b切换到该分支
 - git branch 查看当前分支
 - git merge ｛分支名称｝ 将当前的分支与｛｝中的分支合并
+- git merge --no-ff -m "merge with no-ff" dev 表示禁用Fast forward 会保留分支上的提交信息
 - git branch -d ｛分支名称｝ 删除一个分支
-- 查看分支情况 git log --graph --pretty=oneline --abbrev-commit 
+- git log --graph --pretty=oneline --abbrev-commit 查看分支情况
+
+##分支管理策略
+在实际开发中，我们应该按照几个基本原则进行分支管理：
+首先，master分支应该是非常稳定的，也就是仅用来发布新版本，平时不能在上面干活；
+那在哪干活呢？干活都在dev分支上，也就是说，dev分支是不稳定的，到某个时候，比如1.0版本发布时，再把dev分支合并到master上，在master分支发布1.0版本；
+你和你的小伙伴们每个人都在dev分支上干活，每个人都有自己的分支，时不时地往dev分支上合并就可以了。
+![](/b.png)
+
+##Tag
+
+- git tag v1.0  打标签
+- git tag 查看标签
+- git tag v0.9 6224937  给6224937这次commit打上标签
 
