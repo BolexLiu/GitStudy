@@ -7,7 +7,7 @@ git is free software
 ## 基本命令：
 - git init 初始化目录
 
-- git add ｛文件名称｝ 放入git仓库的暂存区域
+- git add ｛文件名称｝ 放入git仓库的暂存区域 （git add . ） .表示所有的文件
 
 - git commit  -m {提交说明} 把文件提交到仓库
 
