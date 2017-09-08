@@ -20,6 +20,7 @@ git is free software
 - git 输入 git log --all 命令后出现<END>标记？按Q退出
    rm ｛文件命｝ 删除文件
 
+- git rm --cached xxx.txt 删除的是本地仓库中的文件，且本地工作区的文件会保留且不再与远程仓库发生跟踪关系.
 
 
 ---
